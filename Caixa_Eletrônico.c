@@ -12,7 +12,7 @@ int main()
     printf("Digite o saque desejado: ");
     scanf("%d", &saque);
     if (saldo<saque){
-        printf("Não é possível realizar a operação por saldo insuficiente.");
+        printf("Ops, algo deu errado!\nSaldo insuficiente.\n");
         goto fim;
     }
     resto = saque;
@@ -35,7 +35,7 @@ int main()
         printf("Saldo atual: %d\n\n", saldo);
     }
     else{
-        printf("Valor indisponível. Por favor, informe um valor válido de acordo com as cédulas disponíveis.");
+        printf("Valor indisponível. Por favor, informe um valor válido de acordo com as cédulas disponíveis.\n");
     }
     fim:
     printf("Continuar sacando?\n1-> Sim. Qualquer outro símbolo-> Não.\n");
